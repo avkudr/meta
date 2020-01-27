@@ -1191,6 +1191,10 @@ public:
         : node{nullptr}
     {}
 
+    const size_t id() {
+        return node->identifier;
+    }
+ 
     /**
      * @brief Returns the meta type to which a meta data belongs.
      * @return The meta type to which the meta data belongs.
@@ -1538,6 +1542,10 @@ public:
         : node{nullptr}
     {}
 
+    const size_t id() {
+        return node->identifier;
+    }
+    
     /**
      * @brief Indicates whether a given meta type refers to void or not.
      * @return True if the underlying type is void, false otherwise.
